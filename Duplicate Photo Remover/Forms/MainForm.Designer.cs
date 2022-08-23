@@ -40,7 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.statusProgressBar = new System.Windows.Forms.ProgressBar();
-            this.label8 = new System.Windows.Forms.Label();
+            this.statusLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -167,15 +167,15 @@
             this.statusProgressBar.Size = new System.Drawing.Size(437, 23);
             this.statusProgressBar.TabIndex = 11;
             // 
-            // label8
+            // statusLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 251);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 16);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "READY";
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusLabel.Location = new System.Drawing.Point(14, 251);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(54, 16);
+            this.statusLabel.TabIndex = 12;
+            this.statusLabel.Text = "READY";
             // 
             // startButton
             // 
@@ -210,7 +210,7 @@
             this.ClientSize = new System.Drawing.Size(469, 360);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.statusProgressBar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -247,7 +247,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ProgressBar statusProgressBar;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button closeButton;
     }
