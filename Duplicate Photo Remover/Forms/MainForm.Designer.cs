@@ -35,7 +35,7 @@
             this.selectDirectoryButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.deleteDuplicateFilesCheckBox = new System.Windows.Forms.CheckBox();
+            this.deleteDuplicatePhotosCheckBox = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -95,6 +95,7 @@
             this.selectDirectoryButton.TabStop = false;
             this.selectDirectoryButton.Text = "...";
             this.selectDirectoryButton.UseVisualStyleBackColor = true;
+            this.selectDirectoryButton.Click += new System.EventHandler(this.selectDirectoryButton_Click);
             // 
             // label4
             // 
@@ -115,18 +116,18 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Deletion Options";
             // 
-            // deleteDuplicateFilesCheckBox
+            // deleteDuplicatePhotosCheckBox
             // 
-            this.deleteDuplicateFilesCheckBox.AutoSize = true;
-            this.deleteDuplicateFilesCheckBox.Checked = true;
-            this.deleteDuplicateFilesCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.deleteDuplicateFilesCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteDuplicateFilesCheckBox.Location = new System.Drawing.Point(17, 149);
-            this.deleteDuplicateFilesCheckBox.Name = "deleteDuplicateFilesCheckBox";
-            this.deleteDuplicateFilesCheckBox.Size = new System.Drawing.Size(169, 22);
-            this.deleteDuplicateFilesCheckBox.TabIndex = 7;
-            this.deleteDuplicateFilesCheckBox.Text = "Delete Duplicate Files";
-            this.deleteDuplicateFilesCheckBox.UseVisualStyleBackColor = true;
+            this.deleteDuplicatePhotosCheckBox.AutoSize = true;
+            this.deleteDuplicatePhotosCheckBox.Checked = true;
+            this.deleteDuplicatePhotosCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.deleteDuplicatePhotosCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteDuplicatePhotosCheckBox.Location = new System.Drawing.Point(17, 149);
+            this.deleteDuplicatePhotosCheckBox.Name = "deleteDuplicatePhotosCheckBox";
+            this.deleteDuplicatePhotosCheckBox.Size = new System.Drawing.Size(186, 22);
+            this.deleteDuplicatePhotosCheckBox.TabIndex = 7;
+            this.deleteDuplicatePhotosCheckBox.Text = "Delete Duplicate Photos";
+            this.deleteDuplicatePhotosCheckBox.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -187,6 +188,7 @@
             this.startButton.TabStop = false;
             this.startButton.Text = "START";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // closeButton
             // 
@@ -199,6 +201,7 @@
             this.closeButton.TabStop = false;
             this.closeButton.Text = "CLOSE";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // MainForm
             // 
@@ -212,7 +215,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.deleteDuplicateFilesCheckBox);
+            this.Controls.Add(this.deleteDuplicatePhotosCheckBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.selectDirectoryButton);
@@ -239,7 +242,7 @@
         private System.Windows.Forms.Button selectDirectoryButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox deleteDuplicateFilesCheckBox;
+        private System.Windows.Forms.CheckBox deleteDuplicatePhotosCheckBox;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
