@@ -71,7 +71,7 @@ namespace Duplicate_Photo_Remover
         {
             if (SelectedDirectory == null)
             {
-                MessageBox.Show("Please select a valid directory first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowErrorMessage("Please select a valid directory first.");
                 return;
             }
             DeleteDuplicatePhotos(SelectedDirectory);
@@ -83,8 +83,6 @@ namespace Duplicate_Photo_Remover
         #endregion
 
         #region Methods
-
-        private bool IsBusy() => currentStatus == Status.BUSY;
 
         private async void DeleteDuplicatePhotos(string directory)
         {
@@ -110,7 +108,7 @@ namespace Duplicate_Photo_Remover
                 statusProgressBar.Value += 1;
             }
 
-            ShowInformationMessage("All duplicate files were deleted successfully.");
+            ShowInformationMessage("All duplicate photos were deleted successfully.");
             SetStatus(Status.READY);
         }
 
